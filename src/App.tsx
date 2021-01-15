@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+import { lazy, Suspense } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { Modal } from 'components/Modal';
+import { RecoilRoot } from 'recoil';
+import { AnimatePresence } from 'framer-motion';
+import { CubeSpinner } from 'react-spinners-kit';
+import { Home } from 'pages/Home';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const ImageDetails = lazy(() => import('pages/ImageDetails/ImageDetails'));
+
+const App = () => (
+  <RecoilRoot>
+    <BrowserRouter>
+      <AnimatePresence exitBeforeEnter>
+        <Route path="/" component={Home} key="home"/>
+        <Route path="/image/:imageId" key="modal">
+          <Modal>
+            <Suspense fallback={(
+              <div className="mx-auto flex p-4 w-full justify-center">
+                <CubeSpinner />
+              </div>
+            )}>
+              <ImageDetails />
+            </Suspense>
+          </Modal>
+        </Route>
+      </AnimatePresence>
+    </BrowserRouter>
+  </RecoilRoot>
+);
+
 
 export default App;
