@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/pages/ImageDetails/ImageDetails.scss"],"names":[],"mappings":"AAAA,eACE,eAAgB","file":"3.033e28d2.chunk.css","sourcesContent":[".image-details {\n  max-width: 400px;\n}"]}
