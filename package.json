@@ -1,6 +1,7 @@
 {
   "name": "route-animations",
   "version": "0.1.0",
+  "homepage": "http://alberoneramos.github.io/framer-motion-tryout",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.0.0",
@@ -36,7 +37,9 @@
     "test": "craco test",
     "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
     "watch:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
