@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/framer-motion-tryout/static/css/main.94a95d1f.chunk.css",
+    "main.css": "/framer-motion-tryout/static/css/main.083b0db5.chunk.css",
     "main.js": "/framer-motion-tryout/static/js/main.67e1c965.chunk.js",
     "main.js.map": "/framer-motion-tryout/static/js/main.67e1c965.chunk.js.map",
     "runtime-main.js": "/framer-motion-tryout/static/js/runtime-main.5515444d.js",
@@ -16,14 +16,14 @@
     "static/js/5.c597d9d8.chunk.js.map": "/framer-motion-tryout/static/js/5.c597d9d8.chunk.js.map",
     "index.html": "/framer-motion-tryout/index.html",
     "static/css/3.033e28d2.chunk.css.map": "/framer-motion-tryout/static/css/3.033e28d2.chunk.css.map",
-    "static/css/main.94a95d1f.chunk.css.map": "/framer-motion-tryout/static/css/main.94a95d1f.chunk.css.map",
+    "static/css/main.083b0db5.chunk.css.map": "/framer-motion-tryout/static/css/main.083b0db5.chunk.css.map",
     "static/js/2.267cbfcf.chunk.js.LICENSE.txt": "/framer-motion-tryout/static/js/2.267cbfcf.chunk.js.LICENSE.txt",
     "static/media/close.66691a69.svg": "/framer-motion-tryout/static/media/close.66691a69.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.5515444d.js",
     "static/js/2.267cbfcf.chunk.js",
-    "static/css/main.94a95d1f.chunk.css",
+    "static/css/main.083b0db5.chunk.css",
     "static/js/main.67e1c965.chunk.js"
   ]
 }
