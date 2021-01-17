@@ -1,7 +1,7 @@
 {
   "name": "route-animations",
   "version": "0.1.0",
-  "homepage": "http://alberoneramos.github.io/framer-motion-tryout",
+  "homepage": "http://alberoneramos.github.io/framer-motion-tryout/",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.0.0",

@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 import { Modal } from 'components/Modal';
 import { RecoilRoot } from 'recoil';
 import { AnimatePresence } from 'framer-motion';
@@ -11,7 +11,7 @@ const ImageDetails = lazy(() => import('pages/ImageDetails/ImageDetails'));
 
 const App = () => (
   <RecoilRoot>
-    <BrowserRouter>
+    <HashRouter>
       <AnimatePresence exitBeforeEnter>
         <Route path="/" component={Home} key="home"/>
         <Route path="/image/:imageId" key="modal">
@@ -26,7 +26,7 @@ const App = () => (
           </Modal>
         </Route>
       </AnimatePresence>
-    </BrowserRouter>
+    </HashRouter>
   </RecoilRoot>
 );
 
